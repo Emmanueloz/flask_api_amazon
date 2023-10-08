@@ -16,7 +16,7 @@ source .venv/bin/activate
 ```
 
 ```powershell
-. \.venv\Script\activate
+.\.venv\Scripts\activate
 ```
 
 Instalar las dependencias del _requirements.txt_
@@ -32,3 +32,9 @@ cp app/.env_example .env
 ```
 
 Llenar la variables de entorno, estos datos los consigues en la api de [Amazon_Data_Extractor](https://rapidapi.com/thanush2112/api/amazon_data_extractor/), es necesario iniciar sesión
+
+Ya que todo esta listo, ejecuta el siguiente comando para arrancar el proyecto
+
+```bash
+flask --app app run --debug
+```
