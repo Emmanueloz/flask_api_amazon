@@ -9,7 +9,7 @@ def post_product():
         data = request.json
         product_name = data.get('product')
 
-        from .get_product import get_product, get_test
+        from .get_product import get_product
         result = get_product(product_name)
 
         if not result["results"]:
@@ -18,3 +18,10 @@ def post_product():
     except Exception as e:
         error_data = {"error": str(e)}
         return jsonify(error_data), 500
+
+
+@bp.route("/test")
+def route_test():
+    from .get_product import get_test
+
+    return jsonify(get_test())

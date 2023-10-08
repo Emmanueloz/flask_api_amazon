@@ -28,7 +28,7 @@ pip install -r requirements.txt
 Copiar el archivo `.env_example` en la carpeta app con el nombre de `.env`.
 
 ```bash
-cp app/.env_example .env
+cp app/.env_example app/.env
 ```
 
 Llenar la variables de entorno, estos datos los consigues en la api de [Amazon_Data_Extractor](https://rapidapi.com/thanush2112/api/amazon_data_extractor/), es necesario iniciar sesión

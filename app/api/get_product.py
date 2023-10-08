@@ -1,24 +1,29 @@
-def get_test(x_rapidAPI_key, api_key, product_name):
+import json
+import ssl
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
+
+
+def get_test():
+
+    x_rapidAPI_key = os.getenv("X-RapidAPI-Key")
+    api_key = os.getenv("API_KEY")
     data = {
         "products": [{"id": 1, "name": "Apple"}, {"id": 2, "name": "Samsung"}],
         "msg": "Datos de ejemplo con una función de test",
         "params": {
             "x-rapidAPI-key": x_rapidAPI_key,
             "api_key": api_key,
-            "product": product_name
         }
     }
+
     return data
 
 
 def get_product(product_name):
     import http.client
-    import ssl
-    import json
-    from dotenv import load_dotenv
-    import os
-
-    load_dotenv()
 
     x_rapidAPI_key = os.getenv("X-RapidAPI-Key")
     api_key = os.getenv("API_KEY")
