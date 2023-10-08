@@ -8,12 +8,15 @@ Para iniciar el proyecto, primero hay que crear el entorno virtual
 python -m venv .venv
 ```
 
-Y activarlo
+Con el siguiente comando activamos el entorno virtual
+
 **Linux**
 
 ```bash
 source .venv/bin/activate
 ```
+
+**Windows**
 
 ```powershell
 .\.venv\Scripts\activate
