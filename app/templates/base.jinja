@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Api de amazon</title>
+  <link rel="stylesheet" href="{{url_for('static',filename='css/style.css')}}">
+</head>
+<body>
+  <main>
+    <h1>Busqueda de productos de Amazon </h1>
+    <p>Con la API <a target="_blank" href="https://rapidapi.com/thanush2112/api/amazon_data_extractor/">Amazon Data Extractor</a></p>
+    {% block form_product %}
+
+    {% endblock form_product %}
+  </main>
+  <script src="{{url_for('static',filename='js/cartProduct.js')}}"></script>
+  <script src="{{url_for('static',filename='js/main.js')}}"></script>
+</body>
+</html>

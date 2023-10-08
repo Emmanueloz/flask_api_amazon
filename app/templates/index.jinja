@@ -1,0 +1,20 @@
+{% extends "base.jinja" %}
+{% block form_product %}
+<form id="formProduct">
+  <label for="product">
+    <span>Nombre del producto</span>
+    <input 
+      type="text" 
+      name="product" 
+      id="product" 
+      placeholder="Apple MacBook Pro"
+      autofocus
+      required>
+  </label>
+  <button type="submit">Buscar</button>
+</form>
+<hr>
+<section id="resultado">
+  <p>Realiza una búsqueda</p>
+</section>
+{% endblock form_product %}
